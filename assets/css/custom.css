@@ -2,7 +2,8 @@
     border: 1px solid red;
 }
 
-body {
+body,html {
+    height: 100%;
     font-family: 'Nunito Rg';
 }
 
@@ -14,14 +15,14 @@ body {
     height: 100vh ;
 } 
 
-.hero-text h1  {
+section.hero h1  {
     font-size: 5rem;
     font-family:  'Nunito Bold';
     letter-spacing: 0.1rem;
     color:#fff;
 }
 
-.hero-text p {
+section.hero p {
     font-size: 2.5rem;
     letter-spacing: 0.25rem;
     color:#fff;
@@ -29,7 +30,6 @@ body {
 
 section.hero {
     background: url(../img/hero_01.jpg) no-repeat center center ;
-    background-size: cover;
-    
-    
+    background-size: cover;    
+    height: 80vh ;
 }
