@@ -1,19 +1,26 @@
 .test{
     border: 1px solid red;
 }
-
+/*Common Styles*/
 body,html {
     height: 100%;
     font-family: 'Nunito Rg';
 }
-
+h3 {
+    font-family: 'Nunito Bold';
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+}
+/*Header Styles*/
 .bg-black {
     background-color: #000000 !important;
-}
-
-.hero-text {
-    height: 100vh ;
 } 
+/*Section Hero Styles*/
+section.hero {
+    background: url(../img/hero_01.jpg) no-repeat center center ;
+    background-size: cover;    
+    height: 80vh ;
+}
 
 section.hero h1  {
     font-size: 5rem;
@@ -26,10 +33,96 @@ section.hero p {
     font-size: 2.5rem;
     letter-spacing: 0.25rem;
     color:#fff;
+    font-family:  'Nunito SemiBold';
+}
+/*Section About Styles*/
+section.about {
+    background: rgb(211,211,211);
+    background: linear-gradient(90deg, rgba(211,211,211,1) 0%, rgba(211,211,211,1) 
+                35%, rgba(255,255,255,1) 35%, rgba(255,255,255,1) 100%);
+    height: 100vh ;
 }
 
-section.hero {
-    background: url(../img/hero_01.jpg) no-repeat center center ;
-    background-size: cover;    
-    height: 80vh ;
+section.about .image_wrapper {
+    background:#fff;
+    box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.5);
+
+} 
+
+section.about .image_wrapper img{
+    padding: 0.75rem;
+
+} 
+
+section.about span{
+    font-family: 'Nunito SemiBold';
+    font-size:  1.25rem;
+    letter-spacing: 0.1rem;
+} 
+
+section.about p{
+    font-family: 'Nunito Rg';
+    font-size:  1.125rem;
+    letter-spacing: 0.1rem;
+} 
+
+/*Section Services Styles*/
+section.services {
+    background:#d3d3d3;
+    height: 100vh ; 
+    margin-bottom: 5rem; 
+}
+
+section.services h2 {
+    font-family:'Nunito ExtraBold' ;
+    font-size: 2.8125rem;
+    padding: 7rem 7rem 1rem 7rem;    
+}
+
+section.services hr {
+    height: 3px;
+    width: 60px;
+    background:black;   
+}
+
+section.services p {
+    font-family:'Nunito Rg' ;
+    font-size: 1.0625rem;
+    color:black;   
+    padding-top: 2rem;
+}
+
+section.services .card {
+    background-color:#fff5ec ;
+    margin: 1rem;
+    margin-bottom: 2rem;
+}
+
+section.services .card h5 {
+    font-family:'Nunito Bold';
+    font-size: 1.25rem;
+    color: black;
+}
+
+section.services .card p {
+    font-family: 'Nunito SemiBold';
+    font-size: 1rem;
+    color:#000;
+}
+
+/*footer styles*/
+footer {
+   font-family:'Nunito Rg' ;
+   font-size:0.87rem ;
+   padding: 1rem;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #252525;
+   color: white;
+   text-align: center;
+   min-height: 60px;
 }
